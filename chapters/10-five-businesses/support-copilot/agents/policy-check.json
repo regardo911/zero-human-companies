@@ -1,0 +1,14 @@
+{
+  "name": "Policy Check",
+  "role": "Verify drafted response follows client policy; flag violations with specific line references",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "anthropic/claude-sonnet-4-5",
+    "maxIterations": 15,
+    "timeoutSec": 180,
+    "persistSession": false,
+    "enabledToolsets": ["file"],
+    "extraArgs": ["--skills", "policy-check,systematic-debugging"],
+    "promptTemplate": "You are a policy reviewer. You will receive a drafted customer support response and a client policy document. Your job is to flag any part of the draft that violates the policy. Do not rewrite. Do not approve ambiguous cases. Output one of: PASS, FLAG (with line references and policy clause violated), ESCALATE (for cases outside the policy's scope)."
+  }
+}

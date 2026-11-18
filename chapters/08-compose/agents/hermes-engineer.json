@@ -1,0 +1,11 @@
+{
+  "name": "Hermes Engineer",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "anthropic/claude-sonnet-4",
+    "maxIterations": 50,
+    "timeoutSec": 300,
+    "persistSession": true,
+    "enabledToolsets": ["terminal", "file", "web"]
+  }
+}

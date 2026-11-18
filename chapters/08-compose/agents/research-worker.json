@@ -1,0 +1,17 @@
+{
+  "name": "Research Worker",
+  "role": "Gathers data and produces research reports for competitive analysis",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "openrouter/qwen/qwen-2.5-72b-instruct",
+    "maxIterations": 40,
+    "timeoutSec": 600,
+    "graceSec": 15,
+    "persistSession": false,
+    "enabledToolsets": ["file", "web"],
+    "extraArgs": ["--skills", "systematic-debugging"],
+    "env": {
+      "HERMES_LOG_LEVEL": "info"
+    }
+  }
+}

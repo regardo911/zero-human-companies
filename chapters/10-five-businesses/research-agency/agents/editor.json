@@ -1,0 +1,13 @@
+{
+  "name": "Editor",
+  "role": "Fact-check reports and verify all citations",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "openrouter/qwen/qwen-2.5-72b-instruct",
+    "maxIterations": 40,
+    "timeoutSec": 600,
+    "persistSession": false,
+    "enabledToolsets": ["file", "web"],
+    "extraArgs": ["--skills", "citation-verification,systematic-debugging"]
+  }
+}

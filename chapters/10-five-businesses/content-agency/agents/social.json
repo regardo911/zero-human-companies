@@ -1,0 +1,13 @@
+{
+  "name": "Social",
+  "role": "Produce LinkedIn, Twitter, and newsletter variants from approved articles",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "anthropic/claude-haiku-4-5",
+    "maxIterations": 15,
+    "timeoutSec": 240,
+    "persistSession": false,
+    "enabledToolsets": ["file"],
+    "extraArgs": ["--skills", "social-media-adaptation,headline-writing"]
+  }
+}

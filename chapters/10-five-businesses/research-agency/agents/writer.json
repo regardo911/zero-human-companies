@@ -1,0 +1,12 @@
+{
+  "name": "Writer",
+  "role": "Produce polished research reports from structured notes",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "anthropic/claude-sonnet-4-5",
+    "maxIterations": 30,
+    "timeoutSec": 600,
+    "persistSession": false,
+    "enabledToolsets": ["file"]
+  }
+}

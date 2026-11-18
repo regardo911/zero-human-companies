@@ -1,0 +1,18 @@
+{
+  "name": "Collector",
+  "role": "Fetch data from sources and extract into structured JSON using Python",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "openrouter/qwen/qwen-2.5-72b-instruct",
+    "maxIterations": 80,
+    "timeoutSec": 1200,
+    "graceSec": 30,
+    "persistSession": false,
+    "enabledToolsets": ["file", "web", "terminal"],
+    "extraArgs": ["--skills", "jupyter-live-kernel,web-extraction"],
+    "env": {
+      "HERMES_LOG_LEVEL": "info",
+      "PYTHONUNBUFFERED": "1"
+    }
+  }
+}

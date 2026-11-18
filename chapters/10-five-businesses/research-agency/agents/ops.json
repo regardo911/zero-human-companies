@@ -1,0 +1,12 @@
+{
+  "name": "Ops",
+  "role": "Format final reports and save to output directory",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "ollama/llama3:8b",
+    "maxIterations": 10,
+    "timeoutSec": 120,
+    "persistSession": false,
+    "enabledToolsets": ["file"]
+  }
+}

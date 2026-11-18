@@ -1,0 +1,12 @@
+{
+  "name": "Intake",
+  "role": "Parse client briefs into structured research questions",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "anthropic/claude-sonnet-4-5",
+    "maxIterations": 20,
+    "timeoutSec": 180,
+    "persistSession": false,
+    "enabledToolsets": ["file"]
+  }
+}

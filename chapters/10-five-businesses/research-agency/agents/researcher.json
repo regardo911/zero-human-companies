@@ -1,0 +1,13 @@
+{
+  "name": "Researcher",
+  "role": "Gather data and produce structured research notes with citations",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "openrouter/qwen/qwen-2.5-72b-instruct",
+    "maxIterations": 60,
+    "timeoutSec": 900,
+    "persistSession": false,
+    "enabledToolsets": ["file", "web"],
+    "extraArgs": ["--skills", "research-comparison-table,citation-verification"]
+  }
+}

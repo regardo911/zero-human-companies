@@ -1,0 +1,16 @@
+{
+  "name": "Qualifier",
+  "role": "Score each prospect against client ICP criteria and emit qualify/disqualify with reasoning",
+  "adapterType": "hermes_local",
+  "adapterConfig": {
+    "model": "anthropic/claude-sonnet-4-5",
+    "maxIterations": 25,
+    "timeoutSec": 300,
+    "persistSession": false,
+    "enabledToolsets": ["file"],
+    "extraArgs": ["--skills", "prospect-qualification"],
+    "env": {
+      "HERMES_LOG_LEVEL": "info"
+    }
+  }
+}
